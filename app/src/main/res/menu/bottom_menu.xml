@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Language"
+        android:icon="@drawable/home" />
+    <item android:title="Dark Mode"
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/me" />
+    <item android:title="Download Logs"
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/attendance" />
+    <item android:title="Organization Rules"
+        android:id="@+id/ForthFragment"
+        android:icon="@drawable/team" />
+    <item android:title="Help &amp; FAQ"
+        android:id="@+id/FifthFragment"
+        android:icon="@drawable/notification" />
+    <item android:title="Logout"
+        android:icon="@drawable/notification" />
+</menu>

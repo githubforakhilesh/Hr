@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstFragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profilepic"
+        android:layout_marginTop="30dp"
+        android:layout_height="100dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        app:fontFamily="@font/inter"
+        android:text="Rahul Singh"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.AppCompatTextView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:letterSpacing=".03"
+        app:fontFamily="@font/inter"
+        android:text="Sr. Android Developer"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.AppCompatTextView>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E9E9E9"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp">
+    </View>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="match_parent"
+           android:id="@+id/sec_time_txt"
+           android:text="Time"
+           android:letterSpacing="0.1"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:textSize="11.5dp"
+           app:fontFamily="@font/inter"
+           android:layout_weight="1"
+           android:textStyle="normal"
+           android:layout_height="wrap_content">
+       </androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:id="@+id/sec_leave_bal_txt"
+            android:text="Leave Balance"
+            app:fontFamily="@font/inter"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11.5dp"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:id="@+id/sec_expenses_txt"
+            android:text="Expenses"
+            android:gravity="center"
+            app:fontFamily="@font/inter"
+            android:letterSpacing="0.1"
+            android:textColor="@color/black"
+            android:textSize="11.5dp"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:id="@+id/sec_about_me_txt"
+            android:text="About Me"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11.5dp"
+            app:fontFamily="@font/inter"
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@id/below_view"
+            android:background="@color/circle_background_sec"
+            android:layout_height="3dp">
+
+        </View>
+    <View
+        android:id="@+id/below_view"
+        android:layout_width="match_parent"
+        android:background="#E9E9E9"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp">
+    </View>
+
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:padding="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingHorizontal="15dp"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clockinCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                         android:layout_gravity="center"
+                          android:layout_marginTop="13dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clock_in" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Clock In"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/inter"
+                        android:textColor="@color/profile_card_text"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+                    </androidx.appcompat.widget.AppCompatTextView>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:text="Sift today"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/intermedium"
+                    android:textColor="@color/profile_card_general_color"
+                    android:textStyle="normal"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:text="10 Am to 18 Pm"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/intermedium"
+                    android:textColor="@color/profile_card_general_color"
+                    android:textStyle="normal"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+                               </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+               android:id="@+id/partialday"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/partialday" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="Partial Day"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/inter"
+                    android:textColor="@color/profile_card_partialday"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/partial_day"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/intermedium"
+                    android:textColor="@color/profile_card_general_color"
+                    android:textStyle="normal"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                android:id="@+id/work_from_home"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/workfromhome" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="Work From Home"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/inter"
+                    android:textColor="@color/profile_card_workfromhome"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/work_from_home"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/intermedium"
+                    android:textColor="@color/profile_card_general_color"
+                    android:textStyle="normal"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/apply_leave"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/applyleave" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Apply Leave"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/inter"
+                        android:textColor="@color/profile_card_applyleave"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+                    </androidx.appcompat.widget.AppCompatTextView>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/apply_leave"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        app:fontFamily="@font/intermedium"
+                        android:textColor="@color/profile_card_general_color"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="30dp"
+                        android:layout_height="wrap_content">
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Third_fragment">Hello Third fragment</string>
+    <string name="Second_fragment">Hello Second fragment</string>
+    <string name="First_fragment">Hello First fragment</string>
+    <string name="partial_day">You can request for partial day from here</string>
+    <string name="work_from_home">You can request work for home from here</string>
+    <string name="apply_leave">You can apply leave from here</string>
+    <string name="notification_text_1">Rahul singh  Applied for  Annual Leave  from 7th September to 9th september .</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="please_wait">please wait</string>
+    <string name="failed">Failed</string>
+    <string name="something_wrong">Something Went Wrong</string>
+</resources>
