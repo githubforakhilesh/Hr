@@ -100,8 +100,8 @@
 
 
         <Button
-            android:textColor="@color/white"
-            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
             android:text="Login"
             android:id="@+id/SignInLogin"
             android:layout_marginTop="25dp"
