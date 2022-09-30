@@ -145,6 +145,8 @@ public class Login extends AppCompatActivity implements ApiResponse {
                                     } else if (status.equals("0")) {
 
                                         Intent intent = new Intent(Login.this, GeneratePasswordForNewUser.class);
+                                        intent.putExtra("email",e1.getText().toString());
+                                        intent.putExtra("pass",e2.getText().toString());
                                         startActivity(intent);
                                         finish();
                                         pd.dismiss();

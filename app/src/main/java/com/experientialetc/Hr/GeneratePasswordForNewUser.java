@@ -27,8 +27,8 @@ import java.util.Map;
 public class GeneratePasswordForNewUser extends AppCompatActivity {
 
     Button buttonSignUp;
-
-    String url="https://www.experientialetc.com/hrapp/api/signup.php";
+    TextView t1,t2;
+    String url="https://www.experientialetc.com/hrapp/api/GeneratePassword.php";
     RequestQueue requestQueue;
 
 
@@ -40,15 +40,31 @@ public class GeneratePasswordForNewUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generate_password_for_new_user);
 
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         buttonSignUp=findViewById(R.id.Done);
+
+        String email = getIntent().getStringExtra("email");
+        String oldPassword = getIntent().getStringExtra("pass");
 
      e1=findViewById(R.id.changeName);
      e2=findViewById(R.id.changeEmail);
-     e3=findViewById(R.id.changePhone);
-     e4=findViewById(R.id.changePassword);
+     e3=findViewById(R.id.changePassword);
+     e4=findViewById(R.id.changePasswordAgain);
+
+     t1=findViewById(R.id.emailTv);
+     t2=findViewById(R.id.oldpassTv);
+
+     t1.setText(email);
+     t2.setText(oldPassword);
 
         requestQueue= Volley.newRequestQueue(this);
 
+
+        //Toast.makeText(this, ""+email+oldPassword, Toast.LENGTH_SHORT).show();
 
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,11 +111,16 @@ public class GeneratePasswordForNewUser extends AppCompatActivity {
                         @Override
                         protected Map<String, String> getParams() throws AuthFailureError {
                             Map<String, String> data = new HashMap<String, String>();
-
-                            data.put("emp_name", e1.getText().toString());
-                            data.put("emp_emailid", e2.getText().toString());
-                            data.put("emp_mobile_number", e3.getText().toString());
-                            data.put("password", e4.getText().toString());
+//
+//                            data.put("emp_name", e1.getText().toString());
+//                            data.put("emp_emailid", e2.getText().toString());
+//                            data.put("emp_mobile_number", e3.getText().toString());
+//                            data.put("password", e4.getText().toString());
+//
+                            data.put("newpassword", e3.getText().toString());
+                           data.put("confirmpassword", e4.getText().toString());
+                           data.put("oldpassword", t2.getText().toString());
+                            data.put("email", t1.getText().toString());
                             return data;
                         }
                     };
