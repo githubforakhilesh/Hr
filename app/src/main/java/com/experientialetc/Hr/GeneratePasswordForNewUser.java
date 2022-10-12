@@ -70,17 +70,23 @@ public class GeneratePasswordForNewUser extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+               checkPassword();
+
+
                 ProgressDialog progressDialog = new ProgressDialog(GeneratePasswordForNewUser.this);
                 progressDialog.setMessage("Please Wait !!");
                 progressDialog.show();
 
-                String password = e4.getText().toString();
-                if ( password.isEmpty())
+                //String password = e4.getText().toString();
+                String passwordInput = e3.getText().toString().trim();
+                String ConfitmpasswordInput = e4.getText().toString().trim();
+                if ( passwordInput.isEmpty())
                 {
-                    if(password.isEmpty())
+                    if(passwordInput.isEmpty())
                     {
                         e4.setError("Please enter password");
                     }
+
 
 
                 }
@@ -140,5 +146,22 @@ public class GeneratePasswordForNewUser extends AppCompatActivity {
         // getSupportActionBar().hide();
 
 
+    }
+
+    private void checkPassword() {
+        String passwordInput = e3.getText().toString().trim();
+        String ConfitmpasswordInput = e4.getText().toString().trim();
+
+        if (passwordInput.isEmpty()) {
+            e3.setError("Field can't be empty");
+        }  if (passwordInput.length()<5) {
+            e3.setError("Password must be at least 5 characters");
+        }
+        if (!passwordInput.equals(ConfitmpasswordInput)) {
+            Toast.makeText(this, "Password are not same", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "Password matched", Toast.LENGTH_SHORT).show();
+
+        }
     }
 }
